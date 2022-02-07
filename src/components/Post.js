@@ -14,8 +14,8 @@ const Post = (props) => {
       <div className="card" key={post.id}>
         <div className="card-header" style={{display : "flex", flexDirection : "row"}}>
             <div>
-            <img src={profile} style={{ borderRadius: "50%", width: 50 }} />
-          {" " + post.name}
+            <img src={profile} style={{ borderRadius: "50%", width: 50 , padding : 3, border : " 2px solid rgb(83, 157, 253)"}} />
+          <span style={{fontWeight : "bold", fontSize : 17}}>{" " + post.name}</span>
             </div>
           <div style={{marginRight : 5, marginLeft : "auto", cursor : "pointer"}} onClick={() => {delPost(post.id); navigate('/posts');}}>
           <img src={del} style={{ width: 26 }} />
